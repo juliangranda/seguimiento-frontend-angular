@@ -1,29 +1,14 @@
 <h1 style="text-align: center;">Formulario Empleados</h1>
 <!---->
-<form [formGroup]="forma"(ngSubmit)="guardarCambios()" action="" style="margin: 0 auto; width: 730px; padding: 1em; border: 1px solid #CCC; border-radius: 1em;">
-    <div class="row" [ngClass]="{'has-danger': !forma.get('nombre').valid}">
-        <div class="col" >
-            
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" class="default" formControlName="nombre">
-                <div *ngIf="forma.controls['nombre'].errors?.required" class="form-control-feedback">
-                    el nombre es necesario
-                </div>
-            
-                <div *ngIf="forma.controls['nombre'].errors?.minlength" class="form-control-feedback">
-                    por lo menos 3 caracteres
-                </div>
-            
-
-
+<form  action="" style="margin: 0 auto; width: 730px; padding: 1em; border: 1px solid #CCC; border-radius: 1em;">
+    <div class="row">
+        <div class="col">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" class="default">
         </div>
         <div class="col">
             <label for="apellidos">Apellidos:</label>
-            <input type="text" 
-                    id="apellidos" 
-                    name="apellidos" 
-                    class="default"
-                    formControlName = "apellido">
+            <input type="text" id="apellidos" name="apellidos" class="default">
         </div>
     </div>
 
@@ -104,11 +89,7 @@
         <div class="row">
             <div class="col">
                 <label for="email">Email:</label>
-                <input type="email" 
-                        id="email" 
-                        name="email"  
-                        class="default"
-                        formControlName = "correo">
+                <input type="email" id="email" name="email"  class="default">
             </div>
             <div class="col">
                 <label for="departamento">Departamento:</label>
@@ -237,6 +218,4 @@
         <button (click) = "guardarCambios()"type="submit">Enviar</button>
         <button type="reset">Limpiar</button>
     </div>
-
-    {{forma.valid}}
 </form>
