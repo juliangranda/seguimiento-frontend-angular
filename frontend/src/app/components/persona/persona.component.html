@@ -1,1 +1,172 @@
-<p>persona works!</p>
+<p style="margin: 20px;">Formulario Empleados</p>
+<form action="">
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" class="default">
+    </div>
+    <div>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" class="default">
+    </div>
+    <div>
+        <label for="tipodocumento">Tipo de Documento:</label>
+        <select id="tipodocumento" name="tipodocumento" class="default">
+            <option value="">Seleccionar</option>
+            <option value="cedula">Cedula</option>
+            <option value="ti">Tarjeta de Identidad</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="otros">Otros</option>
+        </select>
+    </div>
+    <div>
+        <label for="numerodocumento">Número Documento:</label>
+        <input type="text" id="numerodocumento" name="numerodocumento" class="default">
+    </div>
+
+    <div>
+            <label for="genero">Género:</label>
+            &nbsp;
+            <input type="radio" id ="masculino"name="genero" value="masculino"> Masculino
+            <input type="radio" id = "femenino"name="genero" value="femenino"> Femenino
+            <input type="radio" id = "otro" name="genero" value="otro"> Otro
+    </div>
+
+
+    <div>
+        <label for="estado-civil">Estado Civil:</label>
+        &nbsp;
+        <input type="radio" id ="soltero"name="estado-civil" value="soltero"> Soltero
+        <input type="radio" id = "casado"name="estado-civil" value="casado"> Casado
+        <input type="radio" id = "divorciado" name="estado-civil" value="divorciado"> Divorciado
+        <input type="radio" id = "union-libre" name="union-libre" value="union-libre"> Otro
+
+    </div>
+
+    <!--
+    <di>
+            <label for="fecNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecNacimiento" name="fecNacimiento" min="1945-01-01" max="2070-01-01"
+                class="default">
+        </di>
+        -->
+
+    <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu telefono" class="default">
+    </div>
+
+    <div>
+        <label for="movil">Celular:</label>
+        <input type="tel" id="celular" name="celular" class="default">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu Email" class="default">
+    </div>
+
+    <div>
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento" class="default">
+            <option value="">Seleccionar</option>
+            <option value="antioquia">Antioquia</option>
+            <option value="cundinamarca">Cundinamarca</option>
+            <option value="caldas">Caldas</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="municipio">Municipio:</label>
+        <select id="municipio" name="municipio" class="default">
+            <option value="">Seleccionar</option>
+            <option value="medellin">Medellín</option>
+            <option value="bogota">Bogotá</option>
+            <option value="manizales">Manizales</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="direccion-residencia">Dirección de Residencia:</label>
+        <input type="text" id="direccion-residencia" name="direccion-residencia" class="default">
+    </div>
+
+    <div>
+        <label for="arl">Arl:</label>
+        <select id="arl" name="arl" class="default">
+            <option value="">Seleccionar</option>
+            <option>Sura</option>
+            <option>Positiva</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="eps">Eps:</label>
+        <select id="eps" name="eps" class="default">
+            <option value="">Seleccionar</option>
+            <option>Nueva Eps</option>
+            <option>sura</option>
+            <option>Salud Total</option>
+            <option>Cafe Salud</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="caja-compensacion">Caja de compensación:</label>
+        <select id="caja-compensacion" name="caja-compensacion" class="default">
+            <option value="">Seleccionar</option>
+            <option>Comfama</option>
+            <option>Comfenalco</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="pensiones">Pensiones:</label>
+        <select id="pensiones" name="pensiones" class="default">
+            <option value="">Seleccionar</option>
+            <option>Colpensiones</option>
+            <option>Protección</option>
+            <option>Porvenir</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="cesantias">Cesantías:</label>
+        <select id="cesantias" name="cesantias" class="default">
+            <option value="">Seleccionar</option>
+            <option>Protección</option>
+            <option>Porvenir</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="entidad-empleadora">Entidad empleadora:</label>
+        <input type="text" id="entidad-empleadora" name="entidad-empleadora" class="default">
+    </div>
+
+    <div>
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" class="default">
+    </div>
+    <!--
+    <di>
+        <label for="fecVinculacion">Fecha de Vinculación:</label>
+        <input type="date" id="fecVinculacion" name="fecVinculacion" min="1945-01-01" max="2070-01-01" class="default">
+    </di>
+-->
+
+    <div>
+        <label for="tipoCont">Tipo de Contrato:</label>
+        <select id="tipoCont" name="tipoCont" class="default">
+            <option value="">Seleccionar</option>
+            <option value="Temporal">Temporal</option>
+            <option value="Servicios">Por servicios</option>
+            <option value="Indefinido">Indefinido</option>
+            <option value="Aterminofijo">A término fijo</option>
+            <option value="ObraLabor">Por obra y labor</option>
+        </select>
+    </div>
+
+    <div class="button">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpiar</button>
+    </div>
+</form>
